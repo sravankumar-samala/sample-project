@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
-const Home = () => <h1>This is Home page</h1>;
+const Home = () => <h1>This is Home ra Jaffa raj.</h1>;
 
 const About = () => <h1>This is About page</h1>;
 
