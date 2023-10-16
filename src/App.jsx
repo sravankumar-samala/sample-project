@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
 
 const Home = () => <h1>This is Home page</h1>;
@@ -9,11 +9,11 @@ const NotMatch = () => <h1>No match found</h1>;
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="*" element={<NotMatch />} />
-    </Routes>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
+      <Route component={NotMatch} />
+    </Switch>
   );
 }
 
